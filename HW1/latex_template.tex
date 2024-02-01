@@ -1,0 +1,98 @@
+%---------------------
+% START OF PREAMBLE - do not delete!
+%---------------------
+\documentclass[12pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+%==============================================================================
+% Page layout
+%==============================================================================
+
+%------------------------------------------------------------------------------
+%  Define the page dimensions.
+%------------------------------------------------------------------------------
+\setlength{\hoffset}{0.0in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{6.75in}
+
+\setlength{\voffset}{0in}
+\setlength{\topmargin}{-.6in}
+\setlength{\headheight}{12pt}
+\setlength{\headsep}{12pt}
+\setlength{\textheight}{9.5in}
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\labelitemi}{-}
+%------------------------------------------------------------------------------
+
+%---------------------
+% END OF PREAMBLE - do not delete!
+%---------------------
+
+\begin{document}
+
+%---------------------
+% make the title
+%---------------------
+\title{\Large{{\LaTeX} Template}}
+\author{Elizabeth A. Barnes}
+\date{\today}
+\maketitle
+%\newpage
+%---------------------
+
+%---------------------
+% begin main text
+%---------------------
+In {\LaTeX}, you can type your normal text like this and it will appear as you expect. A {\LaTeX} command is preceded by a $\backslash$. There are two main modes:
+\begin{itemize}
+\item text mode,
+\item math mode.
+\end{itemize}
+You are automatically in text mode, which is why you can just start typing and it appears as you would expect. But, to type math commands, you need to get into math mode. This can be done in two ways
+\begin{enumerate}
+\item \begin{verbatim}This is the Pythagorean Theorem: $\alpha^2+\beta^2=c^2$\end{verbatim} \\
+This results in: This is the Pythagorean Theorem: $\alpha^2+\beta^2=c^2$.
+\item \begin{verbatim}This is the Pythagorean Theorem: 
+\begin{equation} 
+\alpha^2+\beta^2=c^2 
+\end{equation}
+\end{verbatim}
+This results in: This is the Pythagorean Theorem: 
+\begin{equation} 
+\alpha^2+\beta^2=c^2 
+\end{equation}
+\end{enumerate}
+
+Typing mathematical relationships and characters is done in math mode, for example:
+ {\scriptsize \begin{verbatim}
+\begin{equation}
+\frac{1}{N}\sum_{i=1}^{N}(x_i - \overline{x})^2 = \frac{1}{N}\sum_{i=1}^{N}((x_i - \mu) - (\overline{x}-\mu))^2
+\end{equation}
+\end{verbatim}
+}
+leads to, 
+\begin{equation}
+\frac{1}{N}\sum_{i=1}^{N}(x_i - \overline{x})^2 = \frac{1}{N}\sum_{i=1}^{N}((x_i - \mu) - (\overline{x}-\mu))^2
+\end{equation}
+
+%%%======================= FIGURES  ======================= 
+%%% The following is the text for making figures. Uncomment the text below, and replace ``../Syllabus/significant_xkcd.pdf'' with the path to a pdf figure on your computer.
+
+%Adding a pdf figure is done like this:
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=1.25in]{../Syllabus/significant_xkcd.pdf} 
+%\caption{This is a caption}
+%\end{center}
+%\end{figure}
+%
+%Using better quality .eps figures requires a different package to be loaded at the top of the template, namely \begin{verbatim}\usepackage{epsfig}.\end{verbatim}
+%%%======================= FIGURES  ======================= 
+
+\end{document}
+
+

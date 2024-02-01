@@ -1,0 +1,116 @@
+% !TEX root = homework_1.tex
+
+\\input{../../tex_files/CoursePreamble_homeworks.tex}
+\rhead{\scriptsize Homework 1}
+%==============================================================================
+\begin{document}
+%==============================================================================
+
+%%------------------------------------------------------------------------------
+%% Title block information
+%%------------------------------------------------------------------------------
+\begin{center}
+    {\LARGE \textbf{Homework 1} [100 pts.]} \\[.1cm]%
+    \line(1,0){450}
+%    \vspace{12pt}
+\end{center}
+%
+
+\begin{center}
+\framebox{\parbox{5in}{Bayes Theorem, introduction to the central limit theorem, moments, introduction to subsampling and bootstrapping, {\LaTeX}}}
+\end{center}
+
+\textit{This homework will have 10 points go toward good figures (i.e. captions, legends, clear, high-resolution, etc.)}
+
+%==================================================================
+\section*{Reminder of how to earn extra credit}
+%==================================================================
+You will receive 10 extra-credit homework points if you use {\LaTeX} to typeset the solutions to at least one homework. A {\LaTeX} template and a list of beginner's guides can be found on the course webpage. The {\LaTeX} code used to create this homework is also on the website so you can see how it was made.
+
+%%==================================================================
+%\section*{Problem 1: a Bayesian warm-up [10 pts.]}
+%%==================================================================
+%You recently started measuring daily precipitation in Argentina to study extreme precipitation events in the area. Past experience at the site indicates that 5\% of the days exhibit what you consider dangerous amounts of precipitation (e.g. lead to landslides, crop damage, etc.).
+%
+%You are testing a new rain gauge which measures daily precipitation totals and then logs it into a computer. Unfortunately, the particular gauge in question has some reliability problems. Your gauge indicates extreme precipitation on only 95\% of the days that extreme downpours actually occur. Furthermore, your gauge also incorrectly indicates extreme precipitation on 10\% of the days when the actual precipitation was below what you consider extreme.
+%
+%What is the probability that a day, which the gauge indicated had extreme precipitation, did not have extreme precipitation?
+
+%==================================================================
+\section*{Problem 1: Distributions and probabilities [30 pts.]}
+%==================================================================
+On the website, you will find two files called \textit{homework\_1\_data\_Y1.csv} and \textit{homework\_1\_data\_Y2.csv}. Within these files are 2 time series ($Y_1, Y_2$ respectfully).
+\begin{itemize}
+\item $Y_1$ is of hourly air temperature at Christman Field (2013-2014) in units of $^oF$,
+\item $Y_2$ is of hourly wind speeds at Christman Field (2013-2014) in units of mph,
+\end{itemize}
+
+\begin{enumerate}
+\item Find your own data set with at least 1000 samples (talk to me or the TA if you don't have any data that fits this requirement). Let's call this data set $Y_3$.
+\item Standardize the three time series ($Y_1,Y_2,Y_3$) and plot estimates of their probability density functions\footnote{To be a true PDF, the integral under the curve must equal 1.0. So, although your data is not actually continuous, you still want to make sure that the sum of your frequencies over all possible $x$ values, multiplied by the spacing between your $x$ values, is equal to 1.0.} on the same plot. Use a bin size of 0.2 standard deviations and give the y-axis units of density.
+
+\item Create a 4th time series, called $Z$, that has a length of 100,000 and is created from 100,000 samples of a standard normal distribution. Plot the probability density function of $Z$ on the same plot as that of $Y_1,Y_2,Y_3$ using the same bin increment. Which of the $Y$ time series look like the normal distribution $Z$? Which do not?
+
+\item For each of the four \textit{standardized} time series, answer the following question: What is the probability that any one particular measurement is +2 standard deviations or greater? What physical value does a standardized value of +2 standard deviations correspond to for the $Y_i$s?
+
+\item Imagine you go out today and measure the wind speed ($Y_2$) and you obtain a standardized value of +3 standard deviations. How rare of an event is this (how often does a value of +3 or more occur)? How rare would you think this event was if you erroneously assumed that wind speed followed a normal distribution?
+
+\item Provide a few sentences about your data ($Y_3$) and what you have learned about its distribution and what this may tell you about the processes at play.
+
+\end{enumerate}
+
+%==================================================================
+\section*{Problem 2: Central Limit Theorem and $N$ [30 pts.]}
+%==================================================================
+Now, we will explore the Central Limit Theorem\footnote{\url{http://en.wikipedia.org/wiki/Central_limit_theorem}} in the context of the four time series $Z, Y_1, Y_2, Y_3$. The Central Limit Theorem states that for samples of large enough length ($N$), the distribution of \textit{sample means} will follow a normal distribution and thus we can apply  gaussian statistics. For this problem, please use standardized\footnote{i.e. subtract their means and divide by their standard deviations, making $\overline{x} = 0$ and $\sigma_{x} = 1$.} versions of the four time series ($Z, Y_1, Y_2, Y_3$) from Problem 1.
+
+Over the next few weeks, you go out and collect a sample of $N$ measurements, one sample for each time series. You find that the mean of each sample is $-0.35$ standard deviations. You wonder: How rare is a value of $-0.35$? Your goal is to quantify the ``rarity'' of getting a sample mean as extreme as $-0.35$ for the four time series as a function of the sample length $N$ (letting $N$ vary between 5 and 60 in increments of 5).
+
+\begin{enumerate}
+\item Plot estimates of the probability density functions of the sample means for the four time series for $N=20$.
+\item Plot the frequency of the sample mean being $\le -0.35$ as a function of $N$ for the four time series.
+\item Do the approximate probability density functions of the different time series look the same? Different? Why?
+\item What has this exercise shown you about assuming gaussian statistics for sample means?
+\end{enumerate}
+
+\subsubsection*{Hint}
+\vspace{-.2in}
+To explore this question, you will need to ``resample'' the time series over and over again in order to obtain the distribution of the sample means. To start, let $N=20$ and write code that loops through 10,000 different ``experiments''. An experiment consists of the following: randomly select $N$ (in this case, 20) values from each time series, calculate the sample means, and store the values in a vector. When the loop is complete, you will have four vectors of 10,000 sample means and you can use this data to calculate the probability of getting a sample mean as extreme as $-0.35$ when $N=20$. Repeat the process for the other values of $N$.
+
+
+
+%==================================================================
+\section*{Problem 3: Application to climate data [30 pts.]}
+%==================================================================
+You will be plotting climate model output from the Community Earth System Model (CESM) Large Ensemble Project. The Large Ensemble Project includes a 42-member ensemble of fully coupled climate model simulations for the period 1920-2100 (note: only the original 30 are provided here). Each individual ensemble member is subject to the same radiative forcing scenario (historical up to 2005 and high greenhouse gas emission scenario (RCP8.5) thereafter), but begins from a slightly different initial atmospheric state (created by randomly perturbing temperatures at the level of round-off error). In the notebook, you will compare the ensemble remembers with a 2600-year-long model simulation (you have 1800 years) having constant pre-industrial (1850) radiative forcing conditions (perpetual 1850). By comparing the ensemble members to each other and to the 1850 control, you can assess the climate change in the presence of internal climate variability. More information on the CESM Large Ensemble Project can be found at:
+\url{http://www.cesm.ucar.edu/projects/community-projects/LENS/}
+
+On the website, you will find two additional files called
+\begin{itemize}
+\item \textit{TS\_timeseries\_cesmle\_1850.nc}
+\item \textit{TS\_timeseries\_cesmle\_1920\_2100.nc}
+\end{itemize}
+The first is an 1850 control simulation of the NCAR CESM1 climate model. The second is the CESM large ensemble run from 1920-2100 under RCP8.5 conditions. Please use the variable called ``gts\_annual''.
+
+\begin{enumerate}
+\item Use the 1850 control run to calculate population statistics (e.g. mean and variance) in the absence of climate change. Plot a histogram of the data. Do you think that this distribution is Gaussian?
+\item Plot the time series from the control data as well as a time series of the global mean temperature from the first ensemble member.
+\item Estimate present-day global warming in the first ensemble member by calculating the global mean temperature over 1990-2019 (30 years).
+\item Under the assumption that there is no global warming, that is, the 1850 control run and the climate change simulations are drawn from the same climate, how odd is a 30-year mean temperature as the one you calculated in the step above?
+
+To explore this question, you will want to ``resample'' the control simulation over and over again in order to obtain the distribution of the sample means of length 30 years under the assumption of no global warming. Write code that grabs 30 year consecutive chunks and calculates their means, and stores these values in a vector. When the loop is complete, you will have a vector of $\sim 59$ sample means from the control run, and you can compare the distribution under the 1850 control climate to what you actually calculated from the climate change simulation.
+
+\item It is always possible to draw a sample with a statistic that is at the extreme end. That is, even if global warming is not real, it is still possible to draw a single sample of a 30-year period with a very large temperature (even if very unlikely). Your analysis above only involved one ensemble member, and perhaps was just an unlikely fluke. Perform the same calculation in part 3 but now for the other 29 ensemble members. How much more confident are you that your null hypothesis that global warming is not real (i.e. all simulations are drawn from a control, unforced climate) can be rejected? Why? Try and be as quantitative as possible.\footnote{There are some simple statistics you can calculate with this - come see us in our office hours to discuss!}
+
+\end{enumerate}
+
+
+
+
+\clearpage%....................................
+
+
+
+%===========================
+\end{document}
+%===========================
