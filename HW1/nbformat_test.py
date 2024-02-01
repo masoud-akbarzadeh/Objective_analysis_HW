@@ -1,9 +1,9 @@
-import nbformat_test
-from nbformat_test.validator import validate, NotebookValidationError
+import nbformat
+from nbformat.validator import validate, NotebookValidationError
 
 notebook_filename = 'HW1_3.ipynb'  # replace with your file name
 
-with open(notebook_filename) as notebook_file:
+with open('HW1_3.ipynb') as notebook_file:
     notebook = nbformat.read(notebook_file, as_version=4)
     try:
         validate(notebook)
