@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.19)  1 MAR 2024 13:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.19)  1 MAR 2024 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -128,10 +128,22 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box53
 ) (C:/Phd\Objective Analysis\Homeworks_obj\auxil\HW3-OA-Masoud.aux
 
-LaTeX Warning: Label `subsec:problem-1-b' multiply defined.
+LaTeX Warning: Label `fig:problem-1-a' multiply defined.
 
 
 LaTeX Warning: Label `fig:problem-1-a' multiply defined.
+
+
+LaTeX Warning: Label `fig:problem-1-a' multiply defined.
+
+
+LaTeX Warning: Label `fig:problem-1-a' multiply defined.
+
+
+LaTeX Warning: Label `fig:problem-1-a' multiply defined.
+
+
+LaTeX Warning: Label `subsec:problem-2-c' multiply defined.
 
 
 LaTeX Warning: Label `fig:problem-1-a' multiply defined.
@@ -199,364 +211,60 @@ Package pdftex.def Info: p1_2_hw1_hist_sample_std_all.png  used on input line 8
 (pdftex.def)             Requested size: 433.62pt x 520.34802pt.
 
 
-HW3-OA-Masoud.tex:104: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 \\ A
-          ssumptions:
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 LaTeX Warning: Command \= invalid in math mode on input line 111.
 
 HW3-OA-Masoud.tex:111: Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.111 \[ Z = \frac{\=X-\mu}{S / \sqrt{N}}
-                                          = \frac{847.03-846.33}{5.62/\sqrt{...
+l.111 \[ t = \frac{\=X-\mu}{\sigma / \sqrt{N-1}}
+                                                  = 21.48 > 2.09 \] \\
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--123
-
- []
 
 [1
 
 {C:/Users/masou/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <./p1_1_h
 w1_red_noise_time_series.png>] [3 <./p1_2_hw1_hist_sample_mean_all.png>]
 [4 <./p1_2_hw1_hist_sample_std_all.png>]
-
-LaTeX Warning: File `problem1-partA.png' not found on input line 126.
-
-
-HW3-OA-Masoud.tex:126: Package pdftex.def Error: File `problem1-partA.png' not 
-found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.126 ...degraphics[width=5in]{problem1-partA.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `problem1-partC.png' not found on input line 133.
-
-
-HW3-OA-Masoud.tex:133: Package pdftex.def Error: File `problem1-partC.png' not 
-found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133 ...degraphics[width=5in]{problem1-partC.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[5] [6]
-HW3-OA-Masoud.tex:146: You can't use `macro parameter character #' in vertical 
-mode.
-<recently read> ##
-                  
-l.146         \item #
-                      $H_0: \mu = 0$
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 153.
-
-HW3-OA-Masoud.tex:153: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.153 \[ Z = \frac{\=X-\mu}{S / \sqrt{N}}
-                                          = \frac{0.13-0}{1/\sqrt{100}} = 1....
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
+[5]
+<p2_2_hw3_hist_X.png, id=31, 462.528pt x 346.896pt>
+File: p2_2_hw3_hist_X.png Graphic file (type png)
+<use p2_2_hw3_hist_X.png>
+Package pdftex.def Info: p2_2_hw3_hist_X.png  used on input line 126.
+(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \= invalid in math mode on input line 170.
-
-HW3-OA-Masoud.tex:170: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.170 \end{gather*}
-                   
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Overfull \hbox (7.38394pt too wide) detected at line 170
-[]
  []
 
+<p2_2_hw3_lin_reg_X_Y.png, id=32, 462.528pt x 346.896pt>
+File: p2_2_hw3_lin_reg_X_Y.png Graphic file (type png)
+<use p2_2_hw3_lin_reg_X_Y.png>
+Package pdftex.def Info: p2_2_hw3_lin_reg_X_Y.png  used on input line 138.
+(pdftex.def)             Requested size: 505.89pt x 379.43773pt.
 
-LaTeX Warning: Command \= invalid in math mode on input line 171.
+Overfull \hbox (18.0675pt too wide) in paragraph at lines 138--139
+ [] 
+ []
 
-HW3-OA-Masoud.tex:171: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.171 Because $Pr(W|0.12<\=C
-                            _{100}<0.14)<0.5$ this approach says the wind is...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+[6 <./p2_2_hw3_hist_X.png>] [7 <./p2_2_hw3_lin_reg_X_Y.png>]
+<p2_2_hw3_composite_vs_linear.png, id=42, 462.528pt x 346.896pt>
+File: p2_2_hw3_composite_vs_linear.png Graphic file (type png)
+<use p2_2_hw3_composite_vs_linear.png>
+Package pdftex.def Info: p2_2_hw3_composite_vs_linear.png  used on input line 1
+61.
+(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
+File: p2_2_hw3_hist_X.png Graphic file (type png)
+<use p2_2_hw3_hist_X.png>
+Package pdftex.def Info: p2_2_hw3_hist_X.png  used on input line 169.
+(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
 
-HW3-OA-Masoud.tex:172: Undefined control sequence.
-l.172 \nextpage
+HW3-OA-Masoud.tex:176: Undefined control sequence.
+l.176 \nextpage
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -564,37 +272,25 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[7]
-
-LaTeX Warning: File `problem2-partC.png' not found on input line 187.
-
-
-HW3-OA-Masoud.tex:187: Package pdftex.def Error: File `problem2-partC.png' not 
-found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.187 ...degraphics[width=5in]{problem2-partC.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-HW3-OA-Masoud.tex:192: LaTeX Error: Lonely \item--perhaps a missing list enviro
-nment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.192 
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[8] (C:/Phd\Objective Analysis\Homeworks_obj\auxil\HW3-OA-Masoud.aux)
+[8 <./p2_2_hw3_composite_vs_linear.png>] [9]
+<R2_vs_alpha.png, id=50, 629.7126pt x 284.7438pt>
+File: R2_vs_alpha.png Graphic file (type png)
+<use R2_vs_alpha.png>
+Package pdftex.def Info: R2_vs_alpha.png  used on input line 195.
+(pdftex.def)             Requested size: 433.62pt x 196.07805pt.
+<lasso_coefficients.png, id=51, 603.6954pt x 304.7385pt>
+File: lasso_coefficients.png Graphic file (type png)
+<use lasso_coefficients.png>
+Package pdftex.def Info: lasso_coefficients.png  used on input line 202.
+(pdftex.def)             Requested size: 433.62pt x 218.8861pt.
+<ridge_coefficients.png, id=52, 603.6954pt x 304.7385pt>
+File: ridge_coefficients.png Graphic file (type png)
+<use ridge_coefficients.png>
+Package pdftex.def Info: ridge_coefficients.png  used on input line 209.
+(pdftex.def)             Requested size: 433.62pt x 218.8861pt.
+ [10 <./R2_vs_alpha.png>] [11 <./lasso_coefficients.png> <./ridge_coefficients.
+png>]
+(C:/Phd\Objective Analysis\Homeworks_obj\auxil\HW3-OA-Masoud.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -605,26 +301,26 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2177 strings out of 474486
- 35890 string characters out of 5743755
- 1936528 words of memory out of 5000000
- 24477 multiletter control sequences out of 15000+600000
- 564531 words of font info for 59 fonts, out of 8000000 for 9000
+ 2128 strings out of 474486
+ 34553 string characters out of 5743755
+ 1932528 words of memory out of 5000000
+ 24429 multiletter control sequences out of 15000+600000
+ 564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,273b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,233b,271s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/masou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/masou/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi12.pfb><C:/Users/masou/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Users/masou/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/masou/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/masou/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/masou/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/masou/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+ublic/amsfonts/cm/cmmi8.pfb><C:/Users/masou/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/masou/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/masou/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/masou/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/masou/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on "C:/Phd\Objective Analysis\Homeworks_obj\out\HW3-OA-Masoud.pd
-f" (8 pages, 329757 bytes).
+f" (11 pages, 764624 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
